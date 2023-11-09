@@ -20,24 +20,34 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Cats">Kissat</a>
+                        <li>
+                            <button type="button" style="margin:5px" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kissat
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-page="/Cats">Naaraat</a></li>
+                                <li><a class="nav-link text-dark" >Urokset</a></li>
+                                <li><a class="nav-link text-dark" >Kastraatit</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/CatBasket">Kissakori</a>
+                            <a class="nav-link text-dark" asp-page="/CatBasket">Kissakori</a>
+                        </li>
+                        <li>
+                            <button type="button" style="margin:5px" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pentueet
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-page="/Litters">1. pentue</a></li>
+                                <li><a class="nav-link text-dark" asp-page="/Litters">2. pentue</a></li>
+                                <li><a class="nav-link text-dark" asp-page="/Litters">3. pentue</a></li>
+                                <li><a class="nav-link text-dark" asp-page="/Litters">4. pentue</a></li>
+                                <li><a class="nav-link text-dark" asp-page="/Litters">5. pentue</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Litters">Pentueet</a>
+                            <a class="nav-link text-dark" asp-page="/News">Uutiset</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/News">Uutiset</a>
-                        </li>
-                        @*<li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact</a>
-                        </li>*@
                     </ul>
                 </div>
             </div>
